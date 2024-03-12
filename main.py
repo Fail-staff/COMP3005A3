@@ -54,8 +54,8 @@ def getAllStudents():
     #call printable_query function that returns cursor.fetchall() so that we can print the result of the query
     try:
         result = printable_query(connection, get_all)
-    except OperationalError as e:
-        print(f"The error '{e}' has occured")
+    except:
+        print("getAllStudents() query failed")
     
     #iterate on the result of the query and print out each column + the values for the column
     for row in result:
@@ -73,8 +73,8 @@ def addStudent(first_name, last_name, email, enrollment_date):
     #file the query using predefined function
     try:
         file_query(connection, query)
-    except OperationalError as e:
-        print(f"The error '{e}' has occured")
+    except:
+        print("addStudent query function failed to execute")
 
 #function for updating student email that has the corresponding student id
 def updateStudentEmail(student_id, new_email):
@@ -85,8 +85,8 @@ def updateStudentEmail(student_id, new_email):
     #file query using predefined function
     try:
         file_query(connection, query)
-    except OperationalError as e:
-        print(f"The error '{e}' has occured")
+    except:
+        print("updateStudentEmail failed")
 
 #function for deleting a row from the DB corresponding to a specific student id
 def deleteStudent(student_id):
@@ -97,8 +97,8 @@ def deleteStudent(student_id):
     #file query using predefined function
     try:
         file_query(connection, query)
-    except OperationalError as e:
-        print(f"The error '{e}' has occured")
+    except:
+        print("delete student failed")
 
 #define main functions
 def main():
