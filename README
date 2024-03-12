@@ -1,0 +1,21 @@
+COMP3005 Assignment 3
+
+Author: Benjamin Seguin 101196580
+
+Purpose:
+
+This application creates a basic database with a single table, and then connects to that database and runs a few predefined functions on it
+
+Compilation Instructions:
+
+    If you do NOT have the library psycopg2: 
+    - navigate to folder where submission is stored
+    -open terminal
+    -execute the command "pip install psycopg2"
+
+Once psycopg2 is installed..
+
+1. navigate to the folder where the submission is stored
+2. execute the command "python3 main.py"
+
+ This should run the application! You will be prompted for input in the terminal along the way
