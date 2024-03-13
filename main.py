@@ -106,6 +106,8 @@ def main():
     print("using function getALLStudents() : \n")
     getAllStudents()
 
+    input ("=== press enter to commence the next part of the application demonstration ===")
+    
     print("== adding student to DB, getting info from user == \n\n")
     first_name = input("please input the first name of the student you would like to add: ")
     last_name = input("please input the first name of the student you would like to add: ")
@@ -120,11 +122,15 @@ def main():
 
     getAllStudents()
 
+    input ("=== press enter to commence the next part of the application demonstration ===")
+
     print("modifying student 1's email, changing value to butt_licker@hotmail.com: \n\n")
 
     updateStudentEmail(1, "butt_licker@hotmail.com")
 
     getAllStudents()
+
+    input ("=== press enter to commence the next part of the application demonstration ===")
 
     print("== DELETING A ROW FROM DB, GETTING USER INPUT ==")
 
