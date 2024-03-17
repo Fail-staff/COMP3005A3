@@ -47,3 +47,5 @@ def printable_query(db, query):
     except Error as e:
         print(f"The error '{e}' occurred")
     return cursor.fetchall()
+
+

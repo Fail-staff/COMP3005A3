@@ -8,7 +8,7 @@ connection = create_connection(
 )
 
 #drop previous database
-god_function(connection, "DROP DATABASE comp3005a3")
+#god_function(connection, "DROP DATABASE comp3005a3")
 
 #create database 
 god_function(connection, "CREATE DATABASE COMP3005A3")
